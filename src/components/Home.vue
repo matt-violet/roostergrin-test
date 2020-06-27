@@ -63,8 +63,9 @@ export default {
   line-height: 15px;
   margin-top: 8px;
   border-radius: 0;
-  padding: 10px 10px;
+  padding: 10px;
 }
+/* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
   .line-1, .line-2 {
     font-size: 18px;

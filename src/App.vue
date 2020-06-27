@@ -2,18 +2,21 @@
   <div id="app" class="no-gutters">
     <Home/>
     <RowOne/>
+    <RowTwo/>
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue"
 import RowOne from "./components/RowOne.vue"
+import RowTwo from "./components/RowTwo.vue"
 
 export default {
   name: "App",
   components: {
     Home,
-    RowOne
+    RowOne,
+    RowTwo
   }
 }
 </script>
@@ -31,5 +34,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  overflow: hidden;
 }
 </style>
