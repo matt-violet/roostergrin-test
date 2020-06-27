@@ -1,22 +1,28 @@
 <template>
   <div id="app" class="no-gutters">
     <Home/>
+    <RowOne/>
   </div>
 </template>
 
 <script>
 import Home from "./components/Home.vue"
+import RowOne from "./components/RowOne.vue"
 
 export default {
   name: "App",
   components: {
-    Home
+    Home,
+    RowOne
   }
 }
 </script>
 
 <style>
 body {
+  margin: 0;
+}
+html {
   margin: 0;
 }
 #app {

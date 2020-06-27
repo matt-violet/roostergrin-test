@@ -4,7 +4,7 @@
       class="logo col-2 offset-1"
       src="../../assets/logo-white.svg"
     >
-    <div class="row align-items-center">
+    <div class="row align-items-center no-gutters">
       <div class="overlay col-5 offset-4">
         <h1 class="line-1">
           WELCOME TO
