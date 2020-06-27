@@ -1,13 +1,25 @@
 <template>
   <div class="home container col-12 no-gutters">
-    <img class="logo col-2 offset-1" src="../../assets/logo-white.svg">
+    <img
+      class="logo col-2 offset-1"
+      src="../../assets/logo-white.svg"
+    >
     <div class="row align-items-center">
       <div class="overlay col-5 offset-4">
-        <h1 class="line-1">WELCOME TO</h1>
-        <h1 class="line-2">Rooster Grin</h1>
-        <button>BUTTON BUTTON</button>
+        <h1 class="line-1">
+          WELCOME TO
+        </h1>
+        <h1 class="line-2">
+          Rooster Grin
+        </h1>
+        <button class="btn">
+          BUTTON BUTTON
+        </button>
       </div>
-      <img class="bg-img col-12" src="../../assets/hero.jpg"/>
+      <img
+        class="bg-img col-12"
+        src="../../assets/hero.jpg"
+      />
     </div>
   </div>
 </template>
@@ -33,17 +45,50 @@ export default {
   text-align: center;
   position: absolute;
   color: white;
+  padding: 0;
 }
 .line-1 {
   margin: 0;
-  font-size: 40px;
+  font-weight: 200;
 }
-button {
+.line-2 {
+  font-weight: 600;
+}
+.btn {
   background: rgb(166, 112, 216);
   color: white;
   border: 0;
   font-size: 10px;
+  font-weight: 700;
   line-height: 15px;
+  margin-top: 8px;
+  border-radius: 0;
   padding: 10px 10px;
+}
+@media (max-width: 576px) {
+  .line-1, .line-2 {
+    font-size: 18px;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+ .line-1, .line-2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .line-1, .line-2 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 993px) {
+  .line-1, .line-2 {
+    font-size: 60px;
+  }
+  .btn {
+      font-size: 14px;
+  }
 }
 </style>
