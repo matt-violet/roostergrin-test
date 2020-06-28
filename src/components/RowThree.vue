@@ -2,7 +2,7 @@
   <div class="container-fluid col-12">
     <div class="row no-gutters">
       <div class="left col-xs-6 col-sm-6 no-gutters">
-        <div class="text col-8 offset-2 col-sm-8 offset-sm-3 col-lg-6 offset-lg-4">
+        <div class="text col-8 offset-1 col-sm-7 offset-sm-3 col-lg-6 offset-lg-4">
           <h5>LOREM IPSUM</h5>
           <h5>DOLOR SIT AMET</h5>
           <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla alias iste assumenda labore repellendus a vitae unde ullam consectetur, nemo repudiandae rerum deleniti facilis, explicabo eos dicta quaerat voluptatum temporibus!</p>
@@ -45,14 +45,15 @@ export default {
 
 <style scoped>
 .left, .right {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 .left {
   vertical-align: top;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 .right {
-  display: inline-block;
   background: rgb(248, 248, 248);
 }
 h5 {
@@ -62,7 +63,7 @@ h5 {
 }
 .paragraph {
   font-size: 12px;
-  line-height: 1.1;
+  line-height: 1.2;
   margin: 5px 0 5px 0;
 }
 .link {
@@ -94,11 +95,11 @@ h5 {
 }
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
-  .left, .right {
+  .left {
     padding: 0;
   }
   .right {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
   }
   .text {
@@ -120,10 +121,10 @@ h5 {
 }
 @media (min-width: 769px) and (max-width: 992px) {
   h5 {
-    font-size: 28px;
+    font-size: 26px;
   }
   .paragraph, .link {
-    font-size: 14px;
+    font-size: 12px;
   }
   .icon-container {
     margin: 10px 25px;
@@ -140,7 +141,7 @@ h5 {
 }
 @media (min-width: 993px) {
   h5 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .paragraph, .link {
     font-size: 16px;

@@ -4,6 +4,7 @@
     <RowOne/>
     <RowTwo/>
     <RowThree/>
+    <RowFour/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Home from "./components/Home.vue"
 import RowOne from "./components/RowOne.vue"
 import RowTwo from "./components/RowTwo.vue"
 import RowThree from "./components/RowThree.vue"
+import RowFour from "./components/RowFour.vue"
 
 export default {
   name: "App",
@@ -19,7 +21,8 @@ export default {
     Home,
     RowOne,
     RowTwo,
-    RowThree
+    RowThree,
+    RowFour
   }
 }
 </script>

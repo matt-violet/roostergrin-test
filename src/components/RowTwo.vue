@@ -53,10 +53,12 @@ button {
 }
 @media (min-width: 993px) {
   h5 {
-    font-size: 32px;
+    font-size: 35px;
+    margin-bottom: 15px;
   }
   button {
     font-size: 12px;
+    padding: 15px;
   }
 }
 </style>

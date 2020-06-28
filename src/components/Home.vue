@@ -35,7 +35,6 @@ export default {
   vertical-align: top;
   position: relative;
   z-index: -1;
-
 }
 .logo {
   position: absolute;
