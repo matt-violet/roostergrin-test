@@ -1,10 +1,12 @@
 <template>
-  <div class="row col-12 align-items-center no-gutters">
-    <div class="overlay offset-2">
-      <h5>LOREM IPSUM</h5>
-      <button>BUTTON BUTTON</button>
+  <div class="container-fluid col-12">
+    <div class="row align-items-center no-gutters">
+      <div class="overlay col-12 offset-2">
+        <h5>LOREM IPSUM</h5>
+        <button>BUTTON BUTTON</button>
+      </div>
+      <img class="bg-img" src="../../assets/banner-1.jpg">
     </div>
-    <img class="bg-img" src="../../assets/banner-1.jpg">
   </div>
 </template>
 

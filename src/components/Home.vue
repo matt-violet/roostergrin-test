@@ -1,11 +1,11 @@
 <template>
-  <div class="home container col-12 no-gutters">
+  <div class="home container-fluid col-12 no-gutters">
     <img
       class="logo col-2 offset-1"
       src="../../assets/logo-white.svg"
     >
-    <div class="row align-items-center no-gutters">
-      <div class="overlay col-5 offset-4">
+    <div class="row align-items-center">
+      <div class="overlay col-7 offset-3">
         <h1 class="line-1">
           WELCOME TO
         </h1>
@@ -72,6 +72,11 @@ export default {
   }
   .logo {
     margin-left: 20px;
+  }
+  .btn {
+    font-size: 7px;
+    padding: 5px;
+    margin: 0;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {

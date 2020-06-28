@@ -3,6 +3,7 @@
     <Home/>
     <RowOne/>
     <RowTwo/>
+    <RowThree/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Home from "./components/Home.vue"
 import RowOne from "./components/RowOne.vue"
 import RowTwo from "./components/RowTwo.vue"
+import RowThree from "./components/RowThree.vue"
 
 export default {
   name: "App",
   components: {
     Home,
     RowOne,
-    RowTwo
+    RowTwo,
+    RowThree
   }
 }
 </script>

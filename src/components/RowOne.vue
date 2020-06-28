@@ -1,14 +1,16 @@
 <template>
-  <div class="row col-12 align-items-center no-gutters">
-    <div class="left col-6">
-      <div class="text">
-        <h5>LOREM IPSUM</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla alias iste assumenda labore repellendus a vitae unde ullam consectetur, nemo repudiandae rerum deleniti facilis, explicabo eos dicta quaerat voluptatum temporibus!</p>
-        <a href="">> Lorem Ipsum</a>
+  <div class="container-fluid col-12">
+    <div class="row align-items-center no-gutters">
+      <div class="left col-6 no-gutters">
+        <div class="col-9 offset-2 col-md-6 offset-md-4">
+          <h5>LOREM IPSUM</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla alias iste assumenda labore repellendus a vitae unde ullam consectetur, nemo repudiandae rerum deleniti facilis, explicabo eos dicta quaerat voluptatum temporibus!</p>
+          <a href="">> Lorem Ipsum</a>
+        </div>
       </div>
-    </div>
-    <div class="col-6 right">
-      <img src="../../assets/img-1.jpg">
+      <div class="col-6 right">
+        <img src="../../assets/img-1.jpg">
+      </div>
     </div>
   </div>
 </template>
@@ -22,11 +24,6 @@ export default {
 <style scoped>
 .left {
   display: inline-block;
-  padding: 30px;
-}
-.text {
-  float: right;
-  max-width: 450px;
 }
 h5 {
   font-weight: 700; 
@@ -49,12 +46,6 @@ img {
 }
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
-  .left {
-    padding: 20px;
-  }
-  .text {
-    width: 100%;
-  }
   h5 {
     font-size: 12px;
   }
@@ -69,9 +60,6 @@ img {
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  .text {
-    width: 85%;
-  }
   h5 {
     font-size: 16px;
   }
@@ -80,9 +68,6 @@ img {
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-  .text {
-    width: 80%
-  }
   h5 {
     font-size: 24px;
   }
@@ -94,9 +79,6 @@ img {
   }
 }
 @media (min-width: 993px) {
-  .text {
-    width: 80%;
-  }
   h5 {
     font-size: 35px;
   }
