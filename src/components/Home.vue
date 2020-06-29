@@ -6,7 +6,7 @@
       @click="$emit('visitLink', false)"
     >
     <div class="row align-items-center">
-      <div class="overlay col-7 offset-3">
+      <div class="overlay col-7 offset-3 animate__animated animate__fadeIn animate__slower">
         <h1 class="line-1">
           WELCOME TO
         </h1>
@@ -40,6 +40,10 @@ export default {
 .logo {
   position: absolute;
   margin-top: 25px;
+  transition: .5s;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 .logo:hover {
   cursor: pointer;
@@ -52,7 +56,11 @@ export default {
 }
 .line-1 {
   margin: 0;
-  font-weight: 200;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
 }
 .line-2 {
   font-weight: 600;
@@ -67,7 +75,7 @@ export default {
   margin-top: 8px;
   border-radius: 0;
   padding: 10px;
-}
+ }
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
   .line-1, .line-2 {

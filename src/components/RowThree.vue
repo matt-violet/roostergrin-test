@@ -12,21 +12,21 @@
       <div class="right col-12 col-sm-6 no-gutters">
         <div class="col-12 col-lg-10 offset-lg-0">
           <div class="top-icons">
-            <div class="icon-container">
+            <div class="icon-container animate__animated animate__pulse animate__slower animate__infinite">
               <img class="icon" src="../../assets/home-expertise.svg">
               <p class="icon-text">LOREM</p>
             </div>
-            <div class="icon-container">
+            <div class="icon-container animate__animated animate__pulse animate__slower animate__infinite">
               <img class="icon" src="../../assets/home-hygiene.svg">
               <p class="icon-text">LOREM ISPUM</p>
             </div>
           </div>
           <div class="bottom-icons">
-            <div class="icon-container">
+            <div class="icon-container animate__animated animate__pulse animate__slower animate__infinite">
               <img class="icon" src="../../assets/home-lab.svg">
               <p class="icon-text">LOREM IPSUM</p>
             </div>
-            <div class="icon-container">
+            <div class="icon-container animate__animated animate__pulse animate__slower animate__infinite">
               <img class="icon" src="../../assets/home-retention.svg">
               <p class="icon-text">LOREM</p>
             </div>

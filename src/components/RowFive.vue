@@ -89,16 +89,21 @@ img {
   color: black;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 .carousel-control-prev {
+  transition: .5s;
   margin-left: -30px;
 }
 .carousel-control-next {
+  transition: .5s;
   margin-right: -30px;
 }
 .carousel-indicators {
   margin: 30px 0 0 0;
+}
+.carousel-control-next:hover, .carousel-control-prev:hover, .arrow {
+  transform: scale(1.3);
 }
 li {
   width: 5px;

@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     handleLinkClick(url) {
-      url ? window.open(url, '_blank') : alert('Oops, there\'s nowhere to go for this right now 😕');
+      url ? window.open(url, '_blank') : alert('There doesn\'t seem to be anyhere else to go. Looks like you\'re stuck here... 🤓');
     }
   }
 }
@@ -52,5 +52,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   overflow: hidden;
+}
+button {
+  transition: .5s !important;
+}
+button:hover {
+  box-shadow: 5px 5px 10px black !important;
 }
 </style>
