@@ -3,6 +3,7 @@
     <img
       class="logo col-2 offset-1"
       src="../../assets/logo-white.svg"
+      @click="$emit('visitLink', false)"
     >
     <div class="row align-items-center">
       <div class="overlay col-7 offset-3">
@@ -12,7 +13,7 @@
         <h1 class="line-2">
           Rooster Grin
         </h1>
-        <button class="btn">
+        <button class="btn" @click="$emit('visitLink', false)">
           BUTTON BUTTON
         </button>
       </div>
@@ -39,6 +40,9 @@ export default {
 .logo {
   position: absolute;
   margin-top: 25px;
+}
+.logo:hover {
+  cursor: pointer;
 }
 .overlay {
   text-align: center;

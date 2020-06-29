@@ -5,7 +5,7 @@
         <div class="left-text col-12 col-sm-10 offset-sm-4 offset-md-5 col-xl-7">
           <h5>LOREM IPSUM</h5>
           <h5>DOLOR SIT AMET</h5>
-          <a class="stars" href="">&#9733; &#9733; &#9733; &#9733; &#9733;</a>
+          <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
         </div>
       </div>
       <div class="right col-12 col-sm-6 col-md-4 offset-md-1 col-lg-4">
@@ -66,8 +66,6 @@ h5 {
 }
 .stars {
   display: block;
-}
-a {
   font-weight: 700;
   color: rgb(255, 119, 41);
 }

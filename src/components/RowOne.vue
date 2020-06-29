@@ -5,7 +5,7 @@
         <div class="col-9 offset-2 col-md-6 offset-md-4">
           <h5>LOREM IPSUM</h5>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla alias iste assumenda labore repellendus a vitae unde ullam consectetur, nemo repudiandae rerum deleniti facilis, explicabo eos dicta quaerat voluptatum temporibus!</p>
-          <a href="">> Lorem Ipsum</a>
+          <a @click="$emit('visitLink', false)">> Lorem Ipsum</a>
         </div>
       </div>
       <div class="col-6 right">
@@ -37,6 +37,9 @@ p {
 a {
   font-weight: 700;
   color: rgb(133, 91, 172);
+}
+a:hover {
+  cursor: pointer;
 }
 .right {
   display: inline-block;

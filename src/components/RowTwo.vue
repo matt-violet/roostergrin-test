@@ -3,7 +3,7 @@
     <div class="row align-items-center no-gutters">
       <div class="overlay col-12 offset-2">
         <h5>LOREM IPSUM</h5>
-        <button>BUTTON BUTTON</button>
+        <button @click="$emit('visitLink', false)">BUTTON BUTTON</button>
       </div>
       <img class="bg-img" src="../../assets/banner-1.jpg">
     </div>

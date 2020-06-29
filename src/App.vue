@@ -1,12 +1,12 @@
 <template>
   <div id="app" class="no-gutters">
-    <Home/>
-    <RowOne/>
-    <RowTwo/>
-    <RowThree/>
-    <RowFour/>
+    <Home @visitLink="handleLinkClick"/>
+    <RowOne @visitLink="handleLinkClick"/>
+    <RowTwo @visitLink="handleLinkClick"/>
+    <RowThree @visitLink="handleLinkClick"/>
+    <RowFour @visitLink="handleLinkClick"/>
     <RowFive/>
-    <Footer/>
+    <Footer @visitLink="handleLinkClick"/>
   </div>
 </template>
 
@@ -29,6 +29,11 @@ export default {
     RowFour,
     RowFive,
     Footer,
+  },
+  methods: {
+    handleLinkClick(url) {
+      url ? window.open(url, '_blank') : alert('Oops, there\'s nowhere to go for this right now 😕');
+    }
   }
 }
 </script>

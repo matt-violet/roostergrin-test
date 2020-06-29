@@ -6,7 +6,7 @@
           <h5>LOREM IPSUM</h5>
           <h5>DOLOR SIT AMET</h5>
           <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla alias iste assumenda labore repellendus a vitae unde ullam consectetur, nemo repudiandae rerum deleniti facilis, explicabo eos dicta quaerat voluptatum temporibus!</p>
-          <a class="link" href="">> Lorem Ipsum</a>
+          <a class="link" @click="$emit('visitLink', false)">> Lorem Ipsum</a>
         </div>
       </div>
       <div class="right col-12 col-sm-6 no-gutters">
@@ -70,6 +70,9 @@ h5 {
   font-size: 12px;
   font-weight: 700;
   color: rgb(133, 91, 172);
+}
+.link:hover {
+  cursor: pointer;
 }
 .bottom-icons, .top-icons {
   margin: 10px 0;

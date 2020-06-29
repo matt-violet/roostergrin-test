@@ -5,7 +5,7 @@
       <div class="overlay col-6 offset-7 col-sm-4 offset-sm-7 col-lg-4 col-xl-3 align-items-center">
         <h5>LOREM IPSUM</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio eveniet alias itaque iusto tenetur qui, saepe, ab impedit, earum odit voluptatum quibusdam dignissimos dicta. Odio necessitatibus ducimus earum voluptates?</p>
-        <button>BUTTON BUTTON</button>
+        <button @click="$emit('visitLink', false)">BUTTON BUTTON</button>
       </div>
     </div>
   </div>

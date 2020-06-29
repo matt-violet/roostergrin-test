@@ -4,8 +4,8 @@
       <p class="text">Follow Us:</p>
     </div>
     <div class="icon-container">
-      <img class="icon" src="../../assets/instagram.svg">
-      <img class="icon" src="../../assets/facebook.svg">
+      <img class="icon" src="../../assets/instagram.svg" @click="$emit('visitLink', false)">
+      <img class="icon" src="../../assets/facebook.svg" @click="$emit('visitLink', 'https://www.facebook.com/RoosterGrin')">
     </div>
   </div>
 </template>
@@ -13,6 +13,9 @@
 <script>
 export default {
   name: "Footer",
+  props: {
+    visitLink: { type: Function }
+  }
 }
 </script>
 
