@@ -141,7 +141,7 @@ h5 {
 }
 @media (min-width: 993px) {
   h5 {
-    font-size: 28px;
+    font-size: 35px;
   }
   .paragraph, .link {
     font-size: 16px;

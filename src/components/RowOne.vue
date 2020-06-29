@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid col-12">
     <div class="row align-items-center no-gutters">
-      <div class="left col-6 no-gutters">
+      <div class="left col-12 col-sm-6 no-gutters">
         <div class="col-9 offset-2 col-md-6 offset-md-4">
           <h5>LOREM IPSUM</h5>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla alias iste assumenda labore repellendus a vitae unde ullam consectetur, nemo repudiandae rerum deleniti facilis, explicabo eos dicta quaerat voluptatum temporibus!</p>
@@ -24,6 +24,7 @@ export default {
 <style scoped>
 .left {
   display: inline-block;
+  padding: 50px 0;
 }
 h5 {
   font-weight: 700; 
@@ -42,21 +43,21 @@ a {
   vertical-align: top;
 }
 img {
-  width: 100%; 
+  width: 100%;
+  min-height: 260px;
 }
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
   h5 {
-    font-size: 12px;
+    font-size: 22px;
   }
   p, a {
-    font-size: 9px;
+    font-size: 12px;
   }
   .right {
-    height: 100%;
-  }
-  img {
-    height: 175px;
+    height: 0;
+    width: 0;
+    visibility: hidden;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {

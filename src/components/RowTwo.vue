@@ -39,7 +39,7 @@ button {
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
   h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
   button {
     font-size: 8px;

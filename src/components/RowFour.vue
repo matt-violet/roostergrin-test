@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid col-12">
     <div class="row align-items-center no-gutters">
-      <div class="overlay col-8 offset-2 col-sm-4 offset-sm-7 col-lg-4 col-xl-3 align-items-center">
+      <img class="bg-img" src="../../assets/banner-2.jpg">
+      <div class="overlay col-6 offset-7 col-sm-4 offset-sm-7 col-lg-4 col-xl-3 align-items-center">
         <h5>LOREM IPSUM</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio eveniet alias itaque iusto tenetur qui, saepe, ab impedit, earum odit voluptatum quibusdam dignissimos dicta. Odio necessitatibus ducimus earum voluptates?</p>
         <button>BUTTON BUTTON</button>
       </div>
-      <img class="bg-img" src="../../assets/banner-2.jpg">
     </div>
   </div>
 </template>
@@ -20,6 +20,11 @@ export default {
 <style scoped>
 .bg-img {
   width: 100%;
+  /* position: relative; */
+}
+.overlay {
+  position: absolute;
+  /* padding: 75px 0; */
 }
 h5 {
   color: rgb(133, 91, 172);
@@ -42,13 +47,19 @@ button {
 }
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 @media (max-width: 576px) {
-  .bg-img {
+  h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  button {
+    padding: 5px;
+    font-size: 8px;
+  }
+  p {
     visibility: hidden;
     width: 0;
     height: 0;
-  }
-  .overlay {
-    padding: 50px 0;
+    margin: 0;
   }
 }
 @media (min-width: 577px) {
@@ -59,7 +70,7 @@ button {
     font-size: 22px;
   }
   p {
-    font-size: 11px; 
+    font-size: 12px; 
   }
 }
 @media (min-width: 769px) {
